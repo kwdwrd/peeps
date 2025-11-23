@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="section-card">
+<div class="section-card" markdown="1">
 # About
 
 Write your bio here. Explain who you are, what the site is about, and what people

@@ -4,7 +4,7 @@ title: Data
 permalink: /data/
 ---
 
-<div class="section-card">
+<div class="section-card" markdown="1">
 # Data Repository
 
 Here you can list or describe datasets.

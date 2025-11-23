@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="section-card">
+<div class="section-card" markdown="1">
 # Blog
 
 {% for post in site.posts %}
