@@ -1,0 +1,9 @@
+title: "Kyle’s Site"
+description: "My GitHub Pages site"
+theme: minima  # GitHub-hosted Jekyll theme
+
+# Optional: navigation links
+header_pages:
+  - index.md
+  - about.md
+
