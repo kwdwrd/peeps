@@ -1,7 +1,7 @@
 title: "My Modern Site"
 description: "A blog and data repository"
-url: "https://YOUR-USERNAME.github.io"  # change to your real URL
-baseurl: ""  # if using user site; for project site, set to "/REPO-NAME"
+url: "https://kwdwrd.github.io"  # change to your real URL
+baseurl: "/peeps"  # if using user site; for project site, set to "/REPO-NAME"
 
 # Where Jekyll looks for posts
 collections:
