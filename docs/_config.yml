@@ -1,9 +1,13 @@
-title: "Kyle’s Site"
-description: "My GitHub Pages site"
-theme: minima  # GitHub-hosted Jekyll theme
+title: "My Modern Site"
+description: "A blog and data repository"
+url: "https://YOUR-USERNAME.github.io"  # change to your real URL
+baseurl: ""  # if using user site; for project site, set to "/REPO-NAME"
 
-# Optional: navigation links
-header_pages:
-  - index.md
-  - about.md
+# Where Jekyll looks for posts
+collections:
+  posts:
+    output: true
+
+markdown: kramdown
+theme: null
 
