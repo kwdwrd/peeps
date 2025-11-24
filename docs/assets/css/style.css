@@ -134,34 +134,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 1.2rem 0 2rem;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-/* Responsive nav */
-@media (max-width: 640px) {
-  .site-header .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .site-nav {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .site-nav a {
-    margin: 0.15rem 0.35rem 0.15rem 0;
-  }
-}
-
 /* --- Footer --- */
 
 .site-footer {
-  background: #e6e7ec; /* contrasted color */
+  background: #e6e7ec;
   padding: 3rem 0 2rem;
   margin-top: 3rem;
   width: 100%;
@@ -173,11 +149,18 @@ a:hover {
 }
 
 .footer-columns {
-  display: flex;
+  display: flex !important;
+  flex-direction: row !important;
   justify-content: center;
-  gap: 4rem;
+  align-items: flex-start;
+  gap: 6rem;                 /* space between the two columns */
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;         /* <-- forces side-by-side */
+}
+
+.footer-col {
+  min-width: 150px;          /* ensures each column has breathing room */
+  text-align: left;          /* better than center-aligned lists */
 }
 
 .footer-col h4 {
@@ -210,5 +193,18 @@ a:hover {
   color: var(--muted);
   font-size: 0.85rem;
   margin: 0;
+}
+
+/* --- Mobile: stack only on very small screens --- */
+@media (max-width: 600px) {
+  .footer-columns {
+    flex-direction: column !important;
+    gap: 2rem;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+}
 }
 
