@@ -1,0 +1,14 @@
+alex:
+  name: Alex Chen
+  bio: Systems researcher focusing on model evaluation and safety benchmarks.
+  image: /assets/img/authors/alex.svg
+
+priya:
+  name: Priya Desai
+  bio: Data scientist blending policy insight with evidence synthesis across AI studies.
+  image: /assets/img/authors/priya.svg
+
+morgan:
+  name: Morgan Lee
+  bio: Analyst who turns multi-source research into actionable narratives with data.
+  image: /assets/img/authors/morgan.svg

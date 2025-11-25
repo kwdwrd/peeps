@@ -1,0 +1,5 @@
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_MIRROR__HTTPS://RUBYGEMS__ORG/: "https://bundler.rubygems.org"
+BUNDLE_SSL_CA_CERT: "/etc/ssl/cert.pem"
+BUNDLE_DISABLE_MULTISPEC: "true"

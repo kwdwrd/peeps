@@ -7,7 +7,25 @@ baseurl: "/peeps"  # if using user site; for project site, set to "/REPO-NAME"
 collections:
   posts:
     output: true
+    permalink: /blog/:year/:month/:day/:title/
+  research:
+    output: true
+    permalink: /research/:title/
+  analysis:
+    output: true
+    permalink: /analysis/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: analysis
+    values:
+      layout: post
 
 markdown: kramdown
 theme: null
-

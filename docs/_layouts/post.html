@@ -14,10 +14,36 @@ layout: default
         {% endfor %}
       {% endif %}
     </p>
+    {% if page.ai_generated %}
+      <div class="ai-badge">AI-generated</div>
+    {% endif %}
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
-</article>
 
+  {% if page.authors %}
+    <div class="author-grid">
+      {% assign unique_authors = page.authors | uniq %}
+      {% for author_id in unique_authors %}
+        {% assign author = site.data.authors[author_id] %}
+        {% if author %}
+          <div class="author-card">
+            <div class="author-avatar">
+              {% if author.image %}
+                <img src="{{ site.baseurl }}{{ author.image }}" alt="{{ author.name }}" loading="lazy" />
+              {% else %}
+                <div class="author-placeholder">{{ author.name | slice: 0,1 }}</div>
+              {% endif %}
+            </div>
+            <div class="author-details">
+              <div class="author-name">{{ author.name }}</div>
+              <div class="author-bio">{{ author.bio }}</div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>
