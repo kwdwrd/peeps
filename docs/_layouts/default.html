@@ -26,6 +26,13 @@
     <main class="site-main">
       <div class="container">
         {{ content }}
+        {% if page.team %}
+          <div class="section-card">
+            <h2>Team</h2>
+            {% assign team_ids = page.team | uniq %}
+            {% include author_grid.html author_ids=team_ids %}
+          </div>
+        {% endif %}
       </div>
     </main>
 

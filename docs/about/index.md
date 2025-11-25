@@ -10,5 +10,3 @@ team: [alex, priya, morgan]
 
 We dig into emerging research, connect evidence across domains, and publish data-backed syntheses. Below are the people behind the work.
 </div>
-
-{% include author_grid.html author_ids=page.team %}
