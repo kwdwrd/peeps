@@ -241,8 +241,8 @@ a:hover {
 }
 
 .author-avatar {
-  width: 56px;
-  height: 56px;
+  width: clamp(56px, 16%, 72px);
+  height: clamp(56px, 16%, 72px);
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
@@ -250,8 +250,6 @@ a:hover {
   background: linear-gradient(135deg, #dbeafe, #e0f2fe);
   display: grid;
   place-items: center;
-  max-width: 16%;
-  min-width: 56px;
 }
 
 .author-avatar img {
