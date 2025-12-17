@@ -13,7 +13,7 @@ This is my modern site hosted on GitHub Pages.
 - Learn more [about me]({{ site.baseurl }}/about/).
 </div>
 
-<div class="section-card">
+<div class="section-card" markdown="1">
 ## Recent Posts
 
 <ul>
